@@ -2,6 +2,36 @@
 # yarn lockfile v1
 
 
+"@ffmpeg-installer/darwin-x64@4.0.6":
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/@ffmpeg-installer/darwin-x64/-/darwin-x64-4.0.6.tgz#366c0ee40160e0e6b6e4748f97a2bd9dd45d9e68"
+
+"@ffmpeg-installer/ffmpeg@^1.0.15":
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/@ffmpeg-installer/ffmpeg/-/ffmpeg-1.0.15.tgz#e7eb92710971e73eb29986eda32359edfdc4f0df"
+  optionalDependencies:
+    "@ffmpeg-installer/darwin-x64" "4.0.6"
+    "@ffmpeg-installer/linux-ia32" "4.0.4"
+    "@ffmpeg-installer/linux-x64" "4.0.4"
+    "@ffmpeg-installer/win32-ia32" "4.0.4"
+    "@ffmpeg-installer/win32-x64" "4.0.3"
+
+"@ffmpeg-installer/linux-ia32@4.0.4":
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@ffmpeg-installer/linux-ia32/-/linux-ia32-4.0.4.tgz#b8d2c789f2b481f032b9c74efd648699768f1693"
+
+"@ffmpeg-installer/linux-x64@4.0.4":
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@ffmpeg-installer/linux-x64/-/linux-x64-4.0.4.tgz#0d550a1de1dd506c8a71c896013a58527f3d2604"
+
+"@ffmpeg-installer/win32-ia32@4.0.4":
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@ffmpeg-installer/win32-ia32/-/win32-ia32-4.0.4.tgz#f620bbec3c1c0452e9263709317e18cd2f1ce954"
+
+"@ffmpeg-installer/win32-x64@4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@ffmpeg-installer/win32-x64/-/win32-x64-4.0.3.tgz#ff9cf465f5a1a46c2a0334f745aa8bec3b3f48a9"
+
 accepts@^1.2.2:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.5.tgz#eb777df6011723a3b14e8a72c0805c8e86746bd2"
@@ -105,6 +135,10 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
+crypto@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/crypto/-/crypto-1.0.1.tgz#2af1b7cad8175d24c8a1b0778255794a21803037"
+
 debug@*, debug@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
@@ -149,6 +183,12 @@ escape-html@~1.0.1:
 escape-string-regexp@^1.0.2:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
+
+fd-slicer@~1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/fd-slicer/-/fd-slicer-1.0.1.tgz#8b5bcbd9ec327c5041bf9ab023fd6750f1177e65"
+  dependencies:
+    pend "~1.2.0"
 
 fluent-ffmpeg@^2.1.2:
   version "2.1.2"
@@ -385,6 +425,13 @@ multer@1.3.0:
     type-is "^1.6.4"
     xtend "^4.0.0"
 
+multiparty@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/multiparty/-/multiparty-4.1.4.tgz#4c96dcbdc11e3f7917e1615e640b4b5022be64fd"
+  dependencies:
+    fd-slicer "~1.0.1"
+    safe-buffer "5.1.2"
+
 mysql@^2.15.0:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/mysql/-/mysql-2.15.0.tgz#ea16841156343e8f2e47fc8985ec41cdd9573b5c"
@@ -452,6 +499,10 @@ path@^0.12.7:
   dependencies:
     process "^0.11.1"
     util "^0.10.3"
+
+pend@~1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
 
 process-nextick-args@~1.0.6:
   version "1.0.7"
@@ -522,7 +573,7 @@ safe-buffer@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
-safe-buffer@~5.1.0, safe-buffer@~5.1.1:
+safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
 
